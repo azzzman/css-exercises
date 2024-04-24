@@ -1,0 +1,19 @@
+
+
+/* style.css */
+
+.click_me, 
+.no_click_me {
+    font-size: 28px;
+    font-family: "Helvetica", "Times New Roman", sans-serif;
+}
+
+.click_me {
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.no_click_me {
+    background-color: yellow;
+}
