@@ -5,6 +5,11 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  /* Arranging header, content and footer classes vertically */
+  display: flex;
+  flex-direction: column;
+            justify-content: space-between;
 }
 
 img {
@@ -24,4 +29,44 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* Moving links in header and footer to correct positions */
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Arranging all links in header & footer */
+.left-links, .right-links {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Self explanatory */
+.footer {
+  background-color: #eeeeee;
+}
+
+/* Removing styling from links */
+.left-links a, .right-links a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Arranging elements in center of page */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Adding padding to buttons */
+button {
+  padding: 5px 10px;
 }
